@@ -1,0 +1,321 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 微軟正黑體;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.warp{
+	width: 1000px;
+	margin: 0 auto 0 auto;
+}/*網頁整體寬度+置中*/
+
+.header{
+	position: fixed;
+	width: 1000px;
+	background: #c9e7ff;
+	opacity: 0.9;
+}
+
+.linkbar{
+	background: #f6f6f6;
+}/*linkbar顏色*/
+
+.linkbar ul{
+	float: right;
+	margin-right: 5px;
+}/*linkbar ul項目靠右浮動*/
+
+.linkbar ul li{
+	float: left;
+	margin: 5px 5px;
+}/*linkbar li清單靠左浮動*/
+
+.linkbar a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+}/*linkbar連結樣式*/
+
+.linkbar img{
+	float: left;
+	padding-right: 5px;
+}/*linkbar圖文並排清除留白*/
+
+.linkbar span{
+	float: left;
+}/*linkbar圖文並排清除留白*/
+
+.facebook span{
+	color: #4460a0;
+}/*linkbar facebook文字顏色*/
+
+.twitter span{
+	color: #00aaec;
+}/*linkbar twitter文字顏色*/
+
+.twitter{
+	border-left: 2px solid #DDDDDD;
+	padding-left: 8px;
+}/*linkbar 分隔線樣式*/
+
+.menu h1{
+	float: left;
+	margin: 5px 10px;
+}/*logo圖片靠左*/
+
+.menu h1 a{
+	background: url(../images/pet-logo01.png) no-repeat;
+	width: 175px;
+	height: 40px;
+	display: block;
+	text-indent: 101%; 
+	overflow: hidden;
+	white-space: nowrap; 
+}/*logo圖片取代h1文字*/
+
+.menu ul{
+	float: right;
+}/*選單整體靠右*/
+
+.menu ul li{
+	float: left;
+	height: 47px;
+	line-height: 47px;
+	margin: 0 10px 0 10px;
+}/*選單項目垂直置中*/
+
+.menu ul li a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+	color: #ff6289;
+}/*選單項目連結樣式*/
+
+.menu ul li:hover{
+	border-bottom: 3px solid #ff6289;
+	transition-duration: 0.2s;/*hover延遲*/
+}/*選單項目底線hover樣式*/
+
+.banner{
+	display: none;
+}
+
+.banner img{
+    border-radius: 0 0 12px 12px;
+    margin-top: 76px;
+}
+
+.content{
+	width: 990px;
+	margin: 70px auto;
+}/*內容整體寬度與位置*/
+
+.content li{
+	float: left;
+	width: 300px;
+	height: 306px;
+	margin: 0 15px;/*3格左右各空15px*/
+	padding-top: 10px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0 lightgray,0px 0px 0px 0 lightgray;
+}/*內容清單靠右並排+框線樣式*/
+
+.content li:hover{
+	box-shadow: 0px 0px 5px 0 lightblue,0px 0px 20px 0px lightblue;
+}/*hover樣式*/
+
+.content li img{
+	display: block;
+	height: 143px;
+    margin: 0 auto;
+}/*內容圖片水平置中*/
+
+.content li h2{
+	text-align: center;
+	padding: 8px;
+	font-weight: bold;
+	font-size: 20px;
+}/*內容h2標題置中+樣式*/
+
+.content li p{
+	display: block;
+    margin: 0 auto;
+	padding: 0 10px;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: justify;/*文字間距自適應寬度*/
+}/*內容P段落樣式*/
+
+/*.jcp{
+	padding: 0 0 0 50px;
+}
+*/
+.compare{
+	width: 840px;
+	margin: 70px auto;
+}
+
+.tableTitle h2{
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	margin: 25px 0;
+}
+
+.tableStyle th{
+	font-weight: bold;
+	background: #f7f7f7;
+}
+
+.tableStyle th,td{
+	width: 210px;
+	font-size: 16px;
+	text-align: center;
+	padding: 10px 20px;
+	border-top: 1px solid #C4C4C4;
+	border-bottom : 1px solid #C4C4C4;
+}
+
+.one{
+	border-right: 1px solid #C4C4C4;
+}
+
+.tableStyle td span{
+	color: #ff6289;
+	font-weight: bold;
+}
+
+.tableStyle tr:hover{
+	background-color: #f5f5f5;
+	transition-duration: 0.3s;
+}
+
+.contact{
+	width: 1000px;
+	margin: 70px auto 20px auto;
+	background: linear-gradient(#0034b8, #486ecf);
+	border-radius: 12px;
+	color: white;
+}
+
+.contactTitle h2{
+	text-align: center;
+	font-size: 26px;
+	font-weight: bold;
+	line-height: 35px;
+	padding: 35px 0 15px 0;
+}
+
+.form1{
+	float: left;
+	padding:20px;
+	width: 460px;
+	font-weight: bold;
+}
+
+.form1 input{
+	width: 440px;
+	height: 30px;
+	font-size: 16px;
+	padding-left: 10px;
+	margin: 5px auto 15px auto;
+	border-radius: 5px;
+	border: 1px;
+}
+
+.form1 input:focus{
+	background-color: lightblue;
+}
+
+.form2{
+	float: left;
+	padding:20px;
+	width: 460px;
+	font-weight: bold;
+}
+
+.form2 textarea{
+	width: 447px;
+	height: 120px;
+	font-size: 16px;
+	padding-left: 10px;
+	margin: 5px auto 10px auto;
+	border-radius: 5px;
+	border: 1px;
+	resize: none;
+}
+
+.button{
+	background: #ff6289;
+	color: white;
+    border: 1px;
+    border-radius: 5px;  
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+}/*按鈕樣式*/
+
+.footer{
+	margin-bottom: 20px;
+}
+
+.footer ul{
+	float: right;
+	line-height: 20px;
+}
+
+.footer span{
+	color: #ff6289;
+	font-weight: bold;
+}
+
+.clearfix:after{
+  content:'';
+  display:table;
+  clear:both;
+}
